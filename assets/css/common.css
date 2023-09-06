@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 다대여 CSS 》
+************************************************************************************************************************************************************ */
+
+
+/* 공통 */
+body ,html{font-size: 10px; word-break: keep-all;}
+.cotn {max-width:1040px; width:100%; margin:0 auto; padding:0 20px; box-sizing:border-box;}
+.sec_tit {text-align:center; font-family: 'GmarketSansBold'; font-size:4.5rem;}
+.sec_tit .pt {color:#06A78F;}
+.sub_tit {text-align:center; color: #797979;}
+.sec_tit ~ .sub_tit {margin-top:20px;}
+.sub_tit ~ .sec_tit {margin-top:20px;}
+
+@media only screen and (max-width:1024px) {
+	body ,html{font-size: 9px;}
+}
+@media only screen and (max-width:768px) {
+	body ,html{font-size: 8px;}
+}
+
+
+
+/* ============================== [ sec_01 : 메인비쥬얼 ] ========================================================================================== */
+.sec_01 {background:url(../images/main_bg.png) no-repeat center center; background-size: cover; position:relative;}
+.sec_01 h1 {position:absolute; left:60px; top:50px;}
+.sec_01 h1 strong {font-family: 'GmarketSansBold'; font-size:2.5rem; color:#fff;}
+.sec_01 h1 span {font-size:12px; color:#fff; display:block; text-align:center;}
+.sec_01 .cotn {max-width:1240px; padding:270px 20px 250px; background:url(../images/main_viusal.png) no-repeat right bottom;}
+.sec_01 .sub_txt {color:#fff; font-size:2.5rem; letter-spacing:.5em;}
+.sec_01 h2 {font-family: 'GmarketSansBold'; font-size:10rem; color:#fff; line-height:1.2em; margin-top:30px;}
+.sec_01 .txt {font-size:2rem; color:#fff; margin-top:20px; line-height: 1.3;}
+
+@media only screen and (max-width:1300px) {
+	.sec_01 h1 {left: 4%;}
+	.sec_01 .cotn {background-size:580px auto;}
+}
+@media only screen and (max-width:1024px) {
+	.sec_01 .cotn {padding:230px 20px 220px; background-size:450px auto; background-position:right -50px bottom;}
+}
+@media only screen and (max-width:768px) {
+	.sec_01 .cotn {padding:170px 20px; background: none; text-align: center;}
+	.sec_01 h2 {font-size: 70px;}
+	.sec_01 .sub_txt {letter-spacing: .2em;}
+}
+@media only screen and (max-width:500px) {
+	.sec_01 .cotn {padding:170px 20px 120px;}
+	.sec_01 h2 {font-size: 60px;}
+}
+
+/* ============================== [ sec_02 : 상담 ] ========================================================================================== */
+.sec_02 {background-color:#06A78F; padding:100px 0;}
+.sec_02 .sub_tit {color:#fff;font-size:2.5rem;}
+.sec_02 .sec_tit {color:#fff; }
+.sec_02 .box {background-color:#fff; border-radius:10px; text-align:center; margin-top:50px; padding:40px 20px;}
+.sec_02 .box_tit {font-size:3rem;}
+.sec_02 .box_txt {margin-top:20px; color:#797979; line-height:1.5;}
+
+@media only screen and (max-width:768px) {
+	.sec_02 .box {margin-top: 30px;}
+	.sec_02 .box_txt br {display: none;}
+}
+
+/* ============================== [ sec_03 : 소개 ] ========================================================================================== */
+.sec_03 {padding:130px 0;}
+.sec_03 ul {margin-top:65px; display:flex; justify-content: center;}
+.sec_03 ul li {display:flex; align-items:center; justify-content:center; flex-direction: column; width:333px; height:333px; box-sizing: border-box; border:2px solid transparent; border-radius:50%; text-align:center; background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #F6D619 0%,  #3CDA63 100%); background-origin: border-box; background-clip: content-box, border-box;}
+.sec_03 ul li:nth-child(2) {background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #3CDA63 0%,  #03aded 100%);}
+.sec_03 ul li h3 {font-family: 'GmarketSansBold'; font-size:3rem;}
+.sec_03 ul li p {margin-top:30px; font-size:2rem; line-height:1.5;}
+@media only screen and (max-width:1024px) {
+	.sec_03 ul {margin-top: 50px; flex-wrap: wrap;}
+	.sec_03 ul li {width: 280px; height: 280px;}
+	.sec_03 ul li p {margin-top: 20px;}
+}
+@media only screen and (max-width:896px) {
+	.sec_03 ul li:nth-child(2) {margin-left: 30px;}
+}
+@media only screen and (max-width:768px) {
+	.sec_03 ul {display: block;}
+	.sec_03 ul li {width: 220px; height: 220px; margin: 0 auto !important;}
+	.sec_03 ul li p {margin-top: 10px;}
+}
+/* ============================== [ sec_04 : 입금완료 ] ========================================================================================== */
+.sec_04 {background-color:#F4F4F4; padding-top: 65px;}
+.sec_04 .bx_wrap {width: 100%; height: 656px; background:url(../images/bg_ph.png) no-repeat calc(50% - -88px) 0; position: relative; box-sizing: border-box;}
+.sec_04 .cotn {padding: 0;}
+/* box */
+.sec_04 .box {height: 380px; background-color: #fff; overflow: hidden; margin:0 auto; padding: 0 10px; border-radius:14px; position: absolute; left: 50%; bottom: 60px; transform: translateX(-50%); max-width: 590px; width: calc(100% - 20px); box-sizing: border-box;}
+.sec_04 .box::after {display: block; content: ''; width: 100%; height: 87px; background: linear-gradient(to top, #fff, transparent); position: absolute; left: 0; bottom: 0;}
+/* .sec_04 .box div {height: 100%;} */
+.sec_04 .box .marquee {transform:translateY(-380px);}
+.sec_04 .box p {text-align: center; height: 36px; font-size: 2.3rem; letter-spacing: -0.05em;}
+.sec_04 .box p ~ p {margin-top: 10px;}
+.list_bx {padding-top:10px;}
+.list_bx.original {
+	animation: rollingleft1 80s linear infinite;
+}
+.list_bx.clone {
+	animation: rollingleft2 80s linear infinite;
+}
+
+@keyframes rollingleft1 {
+	0% { transform: translateY(0); }
+	50% { transform: translateY(-100%); }
+	50.01% { transform: translateY(100%); }
+	100% { transform: translateY(0); }
+}
+
+@keyframes rollingleft2 {
+	0% { transition: translateY(0); }
+	100% { transform: translateY(-200%); }
+}
+
+@media only screen and (max-width:768px) {
+	.sec_04 .bx_wrap {height: 500px; background-size:auto 100%; background-position: calc(50% + 59px) 0;}
+	.sec_04 .box {height: 280px;}
+	.sec_04 .box p {font-size: 16px;}
+}
+@media only screen and (max-width:500px) {
+	.sec_04 .bx_wrap {height: 350px; background-position: calc(50% + 53px) 0;}
+	.sec_04 .box {height: 220px; bottom: 30px;}
+}
+
+/* ============================== [ sec_05 : 진행 ] ========================================================================================== */
+.sec_05 {padding:130px 0;}
+.sec_05 ul {display:flex; margin-top:90px;}
+.sec_05 ul li {flex:1; text-align:center; position: relative;}
+.sec_05 ul li ~ li::after {display: block; content: ''; width: 73px; height: 73px; background-color: #f8f8f8; background-image:url(../images/arrow_02.png); background-repeat: no-repeat; background-position: center center; position: absolute; left: -36px; top: 56px; border-radius: 50%;}
+.sec_05 ul li figure {width: 187px; height: 187px; border-radius: 50%; background-color: #e9f0f6; margin: 0 auto; position: relative;}
+.sec_05 ul li figure img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.sec_05 ul li h3 {margin-top: 40px; font-size: 3rem; font-family: 'GmarketSansBold'; }
+.sec_05 ul li p {line-height: 1.5; margin-top: 17px;}
+@media only screen and (max-width:1024px) {
+	.sec_05 ul {margin-top: 60px;}
+	.sec_05 ul li figure {width: 160px; height: 160px;}
+	.sec_05 ul li ~ li::after {width: 60px; height: 60px;}
+	.sec_05 ul li h3 {margin-top: 35px;}
+}
+@media only screen and (max-width:768px) {
+	.sec_05 ul {display: block;}
+	.sec_05 ul li ~ li {padding-top: 80px;}
+	.sec_05 ul li ~ li::after {left: 50%; top: 10px; transform:rotate(90deg) translateY(50%);}
+	.sec_05 ul li h3 {margin-top: 25px;}
+}
+
+/* ============================== [ sec_06 : 후기 ] ========================================================================================== */
+.sec_06 {background: url(../images/cs_bg.png) no-repeat center center; background-size:cover; padding:130px 0; overflow: hidden;}
+.sec_06 .cotn {display:flex; justify-content:space-between;}
+.sec_06 .sec_tit {text-align:left; color:#fff; line-height: 1.3;}
+.sec_06 .sub_tit {text-align:left; color:#fff; line-height: 1.7;}
+.sec_06 ul {display:flex; margin-top: 50px;}
+.sec_06 ul li {border-radius: 50%; border:2px solid #fff; width: 130px; height: 130px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.4;}
+.sec_06 ul li ~ li {margin-left: 8px;}
+.sec_06 ul li p {color:#fff; font-size: 15px;}
+.sec_06 figure {max-width: 383px; margin-top: 30px; box-shadow: 0px 25px 81px 0px rgba(0, 0, 0, 0.47);}
+.sec_06 figure img {width: 100%; height: auto;}
+
+@media only screen and (max-width:1024px) {
+	.sec_06 .txt_wrap {margin-right: 10px;}
+	.sec_06 ul li {width: 120px; height: 120px;}
+}
+@media only screen and (max-width:768px) {
+	.sec_06 .cotn {display: block;}
+	.sec_06 .sec_tit, .sec_06 .sub_tit  {text-align: center;}
+	.sec_06 ul {justify-content: center;}
+	.sec_06 figure {margin: 50px auto 0;}
+}
+@media only screen and (max-width:450px) {
+	.sec_06 .txt_wrap {margin-right: 0;}
+	.sec_06 .sec_tit {font-size: 4rem;}
+	.sec_06 ul li {width: 90px; height: 90px;}
+	.sec_06 ul li ~ li {margin-left: 2px;}
+	.sec_06 ul li p {font-size: 12px;}
+}
+/* ============================== [ sec_07 : QnA ] ========================================================================================== */
+.sec_07 {background-color:#E8FAF7; padding:120px 0;}
+.sec_07 ul {margin-top:50px; background-color:#fff; padding:60px 100px 40px;}
+.sec_07 ul li {margin-bottom:45px; display:flex;}
+.sec_07 ul li ~ li {border-top :1px solid #797979; padding-top:30px;}
+.sec_07 ul li .num {display:flex; align-items:center; justify-content:center; box-sizing: border-box; font-size: 2rem; width:60px; height:60px; border:2px solid transparent; border-radius:50%; background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #F6D619 0%,  #3CDA63 100%); background-origin: border-box; background-clip: content-box, border-box; font-family: 'GmarketSansBold';}
+.sec_07 ul li .txt_wrap {margin-top:20px; padding-left:25px; flex:1;}
+.sec_07 ul li .txt_wrap .q_txt {font-family: 'GmarketSansBold'; font-size: 2rem;}
+.sec_07 ul li .txt_wrap .a_txt {margin-top:30px; letter-spacing: -0.02em;}
+
+@media only screen and (max-width:1024px) {
+	.sec_07 ul {margin-top: 40px; padding: 50px 60px 30px;}
+}
+@media only screen and (max-width:768px) {
+	.sec_07 ul {padding: 40px 40px 20px;}
+	.sec_07 ul li {margin-bottom: 35px;}
+	.sec_07 ul li ~ li {padding-top: 20px;}
+	.sec_07 ul li .txt_wrap {padding-left: 15px;}
+	.sec_07 ul li .txt_wrap .a_txt {margin-top: 20px;}
+	.sec_07 ul li .num {width: 50px; height: 50px;}
+}
+@media only screen and (max-width:500px) {
+	.sec_07 ul {padding: 40px 20px 20px;}
+	.sec_07 ul li {display: block;}
+	.sec_07 ul li .txt_wrap {padding-left: 0;}
+
+}
+
+/* ============================== [ sec_08 : 건수 ] ========================================================================================== */
+.sec_08 {padding:120px 0;}
+.sec_08 ul {display:flex; justify-content:center; margin-top:90px;}
+.sec_08 ul li {max-width:210px; flex:1; text-align:center; position:relative;}
+.sec_08 ul li ~ li::after {display:block; content:''; width:2px; height:40px; background-color:#dbdbdb; position:absolute; left:0; top:5px;}
+.sec_08 ul li .num {display: block; font-size: 5rem; line-height: 1.1; font-family: 'GmarketSansBold'; background: linear-gradient(to bottom, #0de3ac, #93e061); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+.sec_08 ul li p {margin-top: 20px; font-size: 2rem;}
+@media only screen and (max-width:1024px) {
+	.sec_08 ul {margin-top: 70px;}
+}
+@media only screen and (max-width:550px){
+	.sec_08 ul {margin-top: 50px; flex-wrap: wrap;}
+	.sec_08 ul li {width: 50%; flex:none;}
+	.sec_08 ul li:nth-child(3)::after {display: none;}
+	.sec_08 ul li:nth-child(n+3) {margin-top: 40px;}
+	.sec_08 .sec_tit br {display: none;}
+}
+/* ============================== [ sec_09 : 정보 ] ========================================================================================== */
+.sec_09 {background-color:#f4f4f4; padding:130px 0 170px;}
+.sec_09 .sub_tit {line-height: 1.5;}
+.sec_09 ul {display:flex; justify-content:space-between; margin-top:70px;}
+.sec_09 ul li {padding: 40px 0; flex:1; background-color:#fff; border-radius:15px; text-align:center; box-sizing: border-box; box-shadow: 0px 5px 10px 0px rgba(82, 82, 82, 0.2);}
+.sec_09 ul li ~ li {margin-left:30px;}
+.sec_09 ul li p {padding-top: 130px; line-height: 1.5; background-repeat: no-repeat; background-position: top center;}
+.sec_09 ul li:nth-child(1) p {background-image: url(../images/ic_info_04.png); background-position: top 17px center;}
+.sec_09 ul li:nth-child(2) p {background-image: url(../images/ic_info_05.png);}
+.sec_09 ul li:nth-child(3) p {background-image: url(../images/ic_info_06.png);}
+@media only screen and (max-width:1024px) {
+	.sec_09 ul {margin-top: 50px;}
+	.sec_09 ul li ~ li {margin-left: 15px;}
+}
+@media only screen and (max-width:768px){
+	.sec_09 ul {display: block; margin-top: 30px;}
+	.sec_09 ul li {width: 100%;  max-width: 270px; margin: 0 auto; padding: 30px 0;}
+	.sec_09 ul li ~ li {margin: 15px auto 0;}
+
+}
+@media only screen and (max-width:580px){
+	.sec_09 .sub_tit br,
+	.sec_09 .sec_tit br {display: none;}
+}
+/* ============================== [ aside ] ========================================================================================== */
+aside {position:fixed; left:0; bottom:0; width:100%; height:85px; background-color:#F4D421; padding-bottom:calc(env(safe-area-inset-bottom) + 0px); padding-bottom:calc(constant(safe-area-inset-bottom) + 0px); z-index:10;}
+aside a {font-size: 3rem; display:flex; align-items:center; justify-content:center; width:100%; height:100%; text-align:center; font-family: 'GmarketSansBold';}
+
+/* ============================== [ QuickMenu ] ========================================================================================== */
+.quick_menu {position:fixed; right:70px; top:50%; transform: translateY(-50%); width:134px; background-color: #000;}
+.quick_menu .kakao {font-size: 15px; height: 160px; display:flex; align-items:center; justify-content:center; text-align:center; background-color:#1B2335; color:#fff;}
+.quick_menu .kakao span {padding-top: 80px; background:url(../images/ic_kakao.png) no-repeat top center;}
+.quick_menu .top {padding: 15px 0 12px; background-color:#000; color:#fff; display:flex; align-items:center; justify-content:center;}
+.quick_menu .top span {padding-right: 14px; background:url(../images/arrow_01.png) no-repeat right top 5px;}
+@media only screen and (max-width:1024px){
+	.quick_menu {right: 10px;}
+}
+@media only screen and (max-width:1024px){
+	aside {height:60px;}
+	aside a {font-size:2.5rem;}
+	.quick_menu {width: 90px;}
+	.quick_menu .kakao {height: 110px; font-size: 12px;}
+	.quick_menu .kakao span {background-size: 45px 45px; padding-top:53px;}
+	.quick_menu .top {padding:10px 0 9px;}
+}
+
+/* ============================== [ Footer ] ========================================================================================== */
+footer {background-color:#000; padding:65px 0 150px;}
+footer .cotn {text-align: center;}
+footer h1 {color:#fff; text-align:center; font-family: 'GmarketSansBold'; padding: 0 25px; position: relative; display: inline-block;}
+footer h1::after {display: block; content: ''; background: url(../images/ic_foot.png) no-repeat 0 0; width: 20px; height: 28px; position: absolute; right: 0; top: 0;}
+footer h1::before {display: block; content: ''; background: url(../images/ic_foot.png) no-repeat 0 0; width: 20px; height: 28px; position: absolute; left: 0; top: 0;}
+footer ul {display:flex; justify-content:center; margin-top:10px;}
+footer ul li {color:#fff; padding-top:10px;}
+footer ul li ~ li {margin-left:10px; padding-left:10px; position:relative;}
+footer ul li ~ li::after {display:block; content: ''; width:1px; height:16px; background-color:#fff; position:absolute; left:0; top:11px;}
+@media only screen and (max-width:400px){
+	footer ul {display: block;}
+	footer ul li ~ li {margin-left:0; padding-left:0;}
+	footer ul li ~ li::after {display: none;}
+}
+
+@media only screen and (max-width:1024px) {
+	.sec_02,
+	.sec_03,
+	.sec_05,
+	.sec_06,
+	.sec_07,
+	.sec_08,
+	.sec_09 {padding:100px 0;}
+}
+@media only screen and (max-width:768px) {
+	.sec_02,
+	.sec_03,
+	.sec_05,
+	.sec_06,
+	.sec_07,
+	.sec_08,
+	.sec_09 {padding:80px 0;}
+}
